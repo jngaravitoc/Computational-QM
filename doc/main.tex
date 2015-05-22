@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 12pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Soluci\'on al \'atamo de Hidrogeno relativista}\\ % Title
+} % Subtitle
+
+\author{\textsc{Juan David Orjuela Zu\~niga \\ Juan Nicol\'as Garavito Camargo} % Author
+\\{\textit{Universidad de los Andes, Bogot\'a, Colombia.}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+\begin{abstract}
+abstract...
+\end{abstract}
+\hspace*{3,6mm}\textit{Keywords:}  % Keywords
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\section*{Antecedentes historicos:}
+
+\section*{Ecuaci\'on de Dirac:}
+
+\section*{\'Atomo de Hidrogeno:}
+
+La ecuaci\'on de Dirac para un potencial radial $V(r)$ es:
+
+\begin{equation}\label{eq:diracvr}
+(c \widetilde{\alpha} \cdot \hat{p} + \widetilde{\beta} m c^2 + V(r) ) \phi(r) = E \phi (r)
+\end{equation}
+
+En (\ref{eq:diracvr}) el termino que se debe tranformar a coordenadas radiales
+ es $\widetilde{\alpha} \cdot \hat{\mathbf{p}}$, ya que \textbf{$\beta$} es independiente del 
+sistema de coordenadas. 
+
+\begin{equation}\label{alphap}
+\widetilde{\alpha} \cdot \hat{\mathbf{p}} = -i \hbar \widetilde{\alpha} \cdot \nabla
+\end{equation}
+
+Haciendo uso de la identidad vectorial: 
+
+\begin{equation}\label{eq:identity}
+\nabla = \hat{\mathbf{r}}(\hat{\mathbf{r}}\cdot \nabla) - \hat{\mathbf{r}} \times (\hat{\mathbf{r}} \times \nabla)  
+\end{equation}
+
+Teniendo encuenta la simetr\'ia esferica del sistema, es decir donde $\partial/\partial \theta = 0$
+y $\partial/\partial \phi = 0$  (\ref{eq:identity}) se puede expresar:
+
+\begin{equation}\label{eq:nabla1}
+\mathbf\nabla = \hat{\mathbf{r}}(\dfrac{\partial}{\partial r}) - \hat{\mathbf{r}} \times (\hat{\mathbf{r}} \times \nabla)
+\end{equation}
+
+El segundo termino en \ref{eq:nabla1} se puede expresar en terminos del momento angular $\mathbf{L} = -i\hbar \mathbf{r} \times \mathbf{\nabla}$.
+
+\begin{equation}\label{eq:nabla}
+\mathbf{\nabla} =  \hat{\mathbf{r}}(\dfrac{\partial}{\partial r}) - \dfrac{i}{\hbar}\dfrac{\hat{\mathbf{r}}}{r} \times \mathbf{L}
+\end{equation}
+
+Por lo tanto \ref{eq:alphap} se puede escribir en terminos de (\ref{eq:nabla}) como:
+
+\begin{equation}\label{eq:alphap2}
+\widetilde{\alpha}\cdot \mathbf{\hat{p}} = -i\hbar \widetilde({\alpha}\cdot \hat{\mathbf{r}}(\dfrac{\partial}{\partial r}) - 
+\dfrac{i}{\hbar}\widetilde{\alpha}\cdot \dfrac{\hat{\mathbf{r}}}{r} \times \mathbf{L})
+\end{equation}
+
+El \'ultimo termino de (\ref{eq:alphap2}) se puede expresar como:
+
+\begin{equation}
+\widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\alpha} \cdot \hat{\mathbf{L}} = i\widetilde{\sigma}\cdot \hat{\mathbf{r}} \times \mathbf{L}
+\end{equation}
+
+\begin{equation}
+i\widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\sigma} \cdot \hat{\mathbf{L}} = -\widetilde{\alpha}\cdot \hat{\mathbf{r}} \times \mathbf{L}
+\end{equation}
+
+\section*{Apendice: Demostraci\'ones de propiedades:}
+
+\subsection*{$\widetilde{\gamma_5}$ properties:}
+
+\[
+\widetilde{\gamma_5} = 
+\begin{pmatrix} 
+0 & - \widetilde{I} \\
+-\widetilde{I} & 0 \\
+\end{pmatrix}
+\]
+
+Donde $\widetilde{I}$ es la matriz identidad de dos dimensiones. operando  $\widetilde{I}$ 
+en $\widetilde{\alpha}$ y $\widetilde{\sigma}$ obtenemos:
+
+\[
+\widetilde{\gamma_5}\widetilde{\alpha_i} = 
+\begin{pmatrix} 
+0 & - \widetilde{I} \\
+-\widetilde{I} & 0 \\
+\end{pmatrix} 
+\begin{pmatrix} 
+0 & \sigma_i \\
+\sigma_i & 0 \\
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+-\sigma_i & 0 \\
+0 & -\sigma_i
+\end{pmatrix}
+= -\widetilde{\sigma_i}
+\]
+
+y analogamente:
+
+\[
+\widetilde{\gamma_5}\widetilde{\sigma_i} = 
+\begin{pmatrix} 
+0 & - \widetilde{I} \\
+-\widetilde{I} & 0 \\
+\end{pmatrix} 
+\begin{pmatrix} 
+\sigma_i & 0 \\
+0 & \sigma_i  \\
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+0 & -\sigma_i \\
+-\sigma_i & 0 \\
+\end{pmatrix}
+= -\widetilde{\alpha_i}
+\]
+
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+
+\bibliography{bibliografia}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
