@@ -74,7 +74,7 @@
 %\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
 
 \begin{abstract}
-abstract...
+Resumen, JD \& JN
 \end{abstract}
 \hspace*{3,6mm}\textit{Keywords:}  % Keywords
 
@@ -84,11 +84,13 @@ abstract...
 %	ESSAY BODY
 %----------------------------------------------------------------------------------------
 
-\section*{Antecedentes historicos:}
+\section{Antecedentes historicos:}
+JD
+\section{Ecuaci\'on de Dirac:}
+JN
+\section{\'Atomo de Hidrogeno:}
 
-\section*{Ecuaci\'on de Dirac:}
-
-\section*{\'Atomo de Hidrogeno:}
+\subsection{Ecuaci\'on de Dirac en coordenadas esfericas.}
 
 La ecuaci\'on de Dirac para un potencial radial $V(r)$ es:
 
@@ -96,11 +98,11 @@ La ecuaci\'on de Dirac para un potencial radial $V(r)$ es:
 (c \widetilde{\alpha} \cdot \hat{p} + \widetilde{\beta} m c^2 + V(r) ) \phi(r) = E \phi (r)
 \end{equation}
 
-En (\ref{eq:diracvr}) el termino que se debe tranformar a coordenadas radiales
+En (\ref{eq:diracvr}) el termino que se debe transformar a coordenadas radiales
  es $\widetilde{\alpha} \cdot \hat{\mathbf{p}}$, ya que \textbf{$\beta$} es independiente del 
 sistema de coordenadas. 
 
-\begin{equation}\label{alphap}
+\begin{equation}\label{eq:alphap}
 \widetilde{\alpha} \cdot \hat{\mathbf{p}} = -i \hbar \widetilde{\alpha} \cdot \nabla
 \end{equation}
 
@@ -110,7 +112,7 @@ Haciendo uso de la identidad vectorial:
 \nabla = \hat{\mathbf{r}}(\hat{\mathbf{r}}\cdot \nabla) - \hat{\mathbf{r}} \times (\hat{\mathbf{r}} \times \nabla)  
 \end{equation}
 
-Teniendo encuenta la simetr\'ia esferica del sistema, es decir donde $\partial/\partial \theta = 0$
+Teniendo en cuenta la simetr\'ia esferica del sistema, es decir donde $\partial/\partial \theta = 0$
 y $\partial/\partial \phi = 0$  (\ref{eq:identity}) se puede expresar:
 
 \begin{equation}\label{eq:nabla1}
@@ -132,17 +134,49 @@ Por lo tanto \ref{eq:alphap} se puede escribir en terminos de (\ref{eq:nabla}) c
 
 El \'ultimo termino de (\ref{eq:alphap2}) se puede expresar como:
 
-\begin{equation}
+\begin{equation}\label{eq:prop1}
 \widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\alpha} \cdot \hat{\mathbf{L}} = i\widetilde{\sigma}\cdot \hat{\mathbf{r}} \times \mathbf{L}
 \end{equation}
+
+En donde se uso la relaci\'on:
+
+\begin{equation}
+\widetilde{\alpha}\cdot \hat{\mathbf{r}}\widetilde{\alpha}\cdot \hat{\mathbf{L}}
+= i \widetilde{\sigma}\cdot \hat{\mathbf{r}}\times \hat{\mathbf{L}}
+\end{equation}
+
+(Ver la demonstraci\'on de esta propiedad en \S \ref{sec:apendice}), multiplicando a ambos lados de (\ref{eq:prop1}) por $\gamma_5$ (ver \S \ref{sec:gamma5}) 
+obtenemos:   
 
 \begin{equation}
 i\widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\sigma} \cdot \hat{\mathbf{L}} = -\widetilde{\alpha}\cdot \hat{\mathbf{r}} \times \mathbf{L}
 \end{equation}
 
-\section*{Apendice: Demostraci\'ones de propiedades:}
+Por lo tanto \ref{eq:alphap2} se puede escribir como:
 
-\subsection*{$\widetilde{\gamma_5}$ properties:}
+\begin{equation}\label{eq:alphap3}
+\widetilde{\alpha}\cdot \mathbf{\hat{p}} = -i\hbar \widetilde{\alpha}\cdot \hat{\mathbf{r}}\partial_r + \dfrac{i}{|\mathbf{r}|}
+\widetilde{\alpha}\cdot \hat{\mathbf{r}}\widetilde{\sigma}\cdot \hat{\mathbf{L}}
+\end{equation} 
+
+Finalmente escribiendo el ultimo termino de (\ref{eq:alphap3}) en terminos
+del vector $\hat{K}$ (Ver pasos intermedios en \S \ref{sec:k}) se obtiene:
+
+\begin{equation}\label{alphap4}
+\widetilde{\alpha} \cdot \mathbf{\hat{p}} = -i\hbar \widetilde{\alpha}\cdot \hat{\mathbf{r}}\partial_r + \dfrac{i}{|\mathbf{r}|} \widetilde{\alpha_r}(\widetilde{\beta}\hat{K}-\hbar)
+\end{equation}
+
+En \ref{eq:diracvr}, por tanto la ecuaci\'on de Dirac en coordenadas esfericas
+es:
+
+\begin{equation}
+\left (ic\widetilde{\gamma_5}\widetilde{\sigma_r} \left (\hbar \partial_r + \dfrac{\hbar}{r} -  \dfrac{\widetilde{\beta}\hat{K}}{r}\right )  + \widetilde{\beta} m c^2 + V(r) \right ) \phi(r) = E \phi (r)
+\end{equation}
+
+
+\section{Apendice: Demostraci\'ones de propiedades.}\label{sec:apendice}
+
+\subsection{$\widetilde{\gamma_5}$ properties:}\label{sec:gamma5}
 
 \[
 \widetilde{\gamma_5} = 
@@ -152,7 +186,7 @@ i\widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\sigma} \cdot \hat{\mathbf{L}
 \end{pmatrix}
 \]
 
-Donde $\widetilde{I}$ es la matriz identidad de dos dimensiones. operando  $\widetilde{I}$ 
+Donde $\widetilde{I}$ es la matriz identidad de dos dimensiones. Operando  $\widetilde{I}$ 
 en $\widetilde{\alpha}$ y $\widetilde{\sigma}$ obtenemos:
 
 \[
@@ -173,7 +207,7 @@ en $\widetilde{\alpha}$ y $\widetilde{\sigma}$ obtenemos:
 = -\widetilde{\sigma_i}
 \]
 
-y analogamente:
+y an\'alogamente:
 
 \[
 \widetilde{\gamma_5}\widetilde{\sigma_i} = 
@@ -192,6 +226,8 @@ y analogamente:
 \end{pmatrix}
 = -\widetilde{\alpha_i}
 \]
+
+\subsection{Vector $\hat{K}$}\label{sec:k}
 
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
