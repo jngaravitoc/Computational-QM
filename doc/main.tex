@@ -53,7 +53,7 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{\'Atamo de Hidrogeno relativista}\\ % Title
+\title{\textbf{\'Atomo de Hidrogeno relativista}\\ % Title
 La perspectiva de Dirac} % Subtitle
 
 \author{\textsc{Juan David Orjuela Zu\~niga \\ Juan Nicol\'as Garavito Camargo} % Author
@@ -198,7 +198,7 @@ Las matrices $\alpha$, $\beta$ y $\sigma$ cumplen con las siguientes relaciones:
 \]
 
 \[
-\{ \widetilde{\sigma_i}, \widetilde{\alpha_j} \} = 0 \ i \diff j
+\{ \widetilde{\sigma_i}, \widetilde{\alpha_j} \} = 0 \ i \neq j
 \]
 
 \[
@@ -360,8 +360,75 @@ Que es la forma usual de la ecuaci\'on de radial de Dirac. Sin embargo, a menudo
 \frac{\partial v_{\kappa}(r)}{\partial r} =\frac{\kappa}{r}v_{\kappa}(r)+\frac{1}{c\hbar}(E-V(r)-mc^2)u_{\kappa}(r)
 \end{equation}
 
-Que tambi\'en es una forma v\'alida de la ecuaci\'on de Dirac.
+Que tambi\'en es una forma v\'alida de la ecuaci\'on de Dirac. Para el \'atomo de Hidrogeno el potencial
+tiene la forma:
 
+\begin{equation}
+V(r) = - \dfrac{Ze^2}{4\pi \eps r}
+\end{equation}
+
+Para simplificar 
+
+\begin{equation}\label{eq:phi1}
+\phi_1(\rho) = \rho^s \sum \limits_{m=0}^{\infty} a_m \rho^m
+\end{equation}
+
+
+\begin{equation} \label{eq:phi2}
+\phi_2(\rho) = \rho^s \sum \limits_{m=0}^{\infty} b_m \rho^m
+\end{equation}
+
+Donde los coeficientes $a_m$ y $b_m$ estan definidos como (El lector interesado 
+puedo ver el desarrollo detallado en el ap\'endice):
+
+\begin{equation}
+a_m = (-1)^m \dfrac{(n'-1)(n'-2)\cdot\cdot\cdot(n'-m)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}a_0
+\end{equation}
+
+\begin{equation}
+b_m = (-1)^m \dfrac{n'(n'-1)\cdot\cdot\cdot(n'-m+1)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}b_0
+\end{equation}
+
+\begin{equation}
+b_0 = -\dfrac{\kappa - \xi k_c /\lambda}{n'}a_0
+\end{equation}
+
+Donde $n' = W_c\xi/\lambda - s$. Reemplazando $a_m$ y $b_m$ en las ecuaciones (\ref{eq:phi1}) y (\ref{eq:phi2})
+podemos expresar como:
+
+\[
+\phi_1(\rho) = \rho^s a_0 \sum  \limits_{m=0}^{\infty} (-1)^m \dfrac{(n'-1)(n'-2)\cdot\cdot\cdot(n'-m)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}a_0 \rho^m 
+\]
+
+\[
+\phi_1(\rho) = \rho^s a_0 \left( \dfrac{(1-n')}{2s+1} \rho + \dfrac{(1-n')(2-n')\rho^2}{(2s+1)(2s+2)}\dfrac{\rho^2}{1!} + \cdot\cdot\cdot  \right)
+\]
+
+\begin{equation}\label{eq:sol1}
+\phi_1(\rho) = 	\rho^s a_0 M(1-n',2s+1,\rho)
+\end{equation}
+
+Donde $M$ es la funcion hipergeometrica. De manera an\'aloga para $\phi_2(\rho)$ obtenemos:
+
+\begin{equation}\label{eq:sol2}
+\phi_2(\rho) = \rho^s b_0 M(-n',2s+1,\rho) = \rho^s \dfrac{\kappa - \xi kc / \lambda}{n'} a_0 M(-n',2s+1,\rho)
+\end{equation}
+
+Aplicando condiciones de frontera podemos encontrar los valores permitidos para $a_0$, las soluciones
+(\ref{eq:sol1}) y (\ref{eq:sol2}) deben converger para $r \rightarrow \infty$. El comportamiento 
+asint\'otico de (\ref{eq:sol2}) y de (\ref{eq:sol1}) se puede ver en la Fig.\ref{fig:hypgeo}, 
+en donde para valores negativos de $n'$ y $2s-1$ las funciones no convergen.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{hypgeo.png}
+\caption*{Comportamiento asint\'otico de la funci\'on hipergeometrica.
+\label{fig:hypgeo}}
+\end{figure}  
+
+Para $n' = 0$ la funci\'on hipergeometrica converge pero las funciones (\ref{eq:sol2}) y (\ref{eq:sol1})
+divergen. Por lo tanto si $n'=0$ la constante $a_0 = 0$ para (\ref{eq:sol1}) y $\kappa - \xi kc / \lambda$
+para (\ref{eq:sol2}), lo cual implica que para $n'=0$ $\kappa > 0$. 
 
 \section{Ap\'endice: Demostraci\'ones y desarrollos matematicos}\label{sec:apendice}
 
@@ -420,7 +487,7 @@ Adicionalmente las matrices $\widetilde{\gamma}$ cumplen con las siguientes
 propiedades de conmutaci\'on y anticonmutaci\'on:
 
 \[
-\{ \widetilde{\gamma}_i, \widetilde{\gamma}_j \} = 0 \ i\=j
+\{ \widetilde{\gamma}_i, \widetilde{\gamma}_j \} = 0 \ i \neq j
 \]
 
 Y $\widetilde{\gamma}_5$ conmuta con $\widetilde{\alpha}_i$ y $\widetilde{\sigma}_i$: 
@@ -445,6 +512,73 @@ l \rightarrow j = l - 1/2 \\
 \end{cases}
 \]  
 
+% ---------------- coeficientes a_m y b_m
+
+\subsection{Derivaci\'on de los coeficientes $a_m$ y $b_m$}
+
+\begin{equation}\label{eq:am}
+a_m(m+s) = a_{m-1} - \dfrac{Wc\xi}{\lambda}a_m - \left(\kappa + \dfrac{\xi kc}{\lambda}\right) b_m
+\end{equation}
+
+\begin{equation}\label{eq:bm}
+b_m(m+s) = \left( -\kappa + \dfrac{\xi kc}{\lambda}  \right)a_m + \dfrac{Wc \xi}{\lambda}b_m
+\end{equation}
+
+Para poder estudiar bien estas relaciones veamos el caso $m=0$ que implica que $a_{m-1}$. Este 
+sistema de ecuaciones tendr\'a soluciones si el determinante de los coeficientes es diferente de
+cero. 
+
+\[
+\begin{vmatrix}
+s + Wc \xi/\lambda & \kappa + \xi kc/\lambda \\
+\kappa - \xi kc/lambda & s-Wc \xi/lambda \\
+\end{vmatrix}
+= 0
+\]
+
+Lo que implica que:
+
+\[
+s^2 - \dfrac{Wc^2 \xi^2}{\lambda^2} = \kappa^2 - \dfrac{\xi^2 kc^2}{\lambda^2}
+\]
+
+Y recordando que $\lambda^2 = kc^2 + Wc^2$ se obtiene:
+
+\[
+s = \pm \sqrt{\kappa^2 - \xi^2}
+\]
+
+Siempre se escoge el signo positivo en la soluci\'on de $s$ debido a que se debe garantizar siempre
+que las ecuaciones (\ref{eq:phi1})  y (\ref{eq:phi2}) sean cuadrado integrables. Es de interes entonces
+encontrar las relaciones de recurrencia para $a_m$ y $b_m$, por lo tanto se despeja $b_m/a_m$ de (\ref{eq:bm})
+
+\begin{equation}\label{eq:ambm}
+\dfrac{b_m}{a_m} = \dfrac{\kappa - \xi kc/\lambda}{Wc\xi /\lambda - m - s} = \dfrac{\kappa - \xi kc/\lambda}{n'-m}
+\end{equation} 
+
+En donde se definio $n' = Wc \xi /\lambda - s$. Reemplazando (\ref{eq:ambm}) en (\ref{eq:am}) se obtiene:
+
+\begin{equation}\label{eq:am-1}
+a_m = - \dfrac{n-m}{m(2s+m)}a_{m-1}
+\end{equation} 
+
+Que para el caso de $m=0$ se obtiene:
+
+\begin{equation}
+b_0 = \dfrac{\kappa - \xi kc/\lambda}{n'}a_0
+\end{equation}
+
+De (\ref{eq:am-1}) se puede ver que la relacion de recurrencia para $a_m$ es:
+
+\begin{equation}
+a_m = (-1)^m \dfrac{(n'-1)(n'-2)\cdot\cdot\cdot(n'-m)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}a_0
+\end{equation} 
+
+Y con un proceidimiento an\'alogo se deduce que $b_m$ es:
+ 
+\begin{equation}
+b_m = (-1)^m \dfrac{n'(n'-1)\cdot\cdot\cdot (n'-m +1)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}b_0
+\end{equation}
 
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
