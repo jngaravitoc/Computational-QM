@@ -13,7 +13,7 @@
 \setbeamertemplate{itemize items}[square]
 \usefonttheme{serif}
 \title{\textit{\textbf{\'Atomo de Hidr\'ogeno relativista en el formalismo de Dirac.}}}
-\author{Juan Nicol\'as Garavito Camargo \\ Juan David Orjuela Zu\~niga}
+\author{Juan Nicol\'as Garavito Camargo \\ Juan David Orjuela Z\'u\~niga}
 \institute{Universidad de los Andes, Bogot\'a, Colombia}
 \date{May 27, 2015}
 \begin{document}
@@ -75,7 +75,7 @@ E\phi(\mathbf{r},t) =
 
 \end{frame}
 
-\begin{frame}{\textit{\textbf{\'Atomo de Hidrogeno realtivista y con spin}}}
+\begin{frame}{\textit{\textbf{\'Atomo de Hidr\'ogeno relativista y con spin}}}
 
 \[
 (c \widetilde{\alpha} \cdot \hat{p} + \widetilde{\beta} m c^2 + V(r) ) \phi(r) = E \phi (r)
@@ -86,7 +86,7 @@ V(r) = \dfrac{Ze^2}{4\pi\epsilon_0 r^2}
 \end{equation}
 \end{frame}
 
-\begin{frame}{\textit{\textbf{Transformaci\'on a coordenadas esfericas}}}
+\begin{frame}{\textit{\textbf{Transformaci\'on a coordenadas esf\'ericas}}}
 \begin{equation}\label{eq:alphap}
 \widetilde{\alpha} \cdot \hat{\mathbf{p}} = -i \hbar \widetilde{\alpha} \cdot \nabla
 \end{equation}
@@ -103,7 +103,7 @@ Por lo tanto (\ref{eq:alphap}) se puede escribir en t\'erminos de (\ref{eq:nabla
 \end{equation}
 \end{frame}
 
-\begin{frame}{\textbf{\textit{Definici\'on del n\'umero cuantico}} $\kappa$}
+\begin{frame}{\textbf{\textit{Definici\'on del n\'umero cu\'antico}} $\kappa$}
 \begin{equation}
 \widetilde{\hat{K}} = \widetilde{\hat{L}}\cdot \widetilde{\sigma} + \hbar
 \end{equation}
@@ -120,7 +120,7 @@ l \rightarrow j = l - 1/2 \\
 
 \end{frame}
 
-\begin{frame}{\textit{\textbf{Ecuaci\'on de Dirac en coordenadas esfericas}}}
+\begin{frame}{\textit{\textbf{Ecuaci\'on de Dirac en coordenadas esf\'ericas}}}
 \begin{equation}\label{alphap4}
 \widetilde{\alpha} \cdot \mathbf{\hat{p}} = -i\hbar \widetilde{\alpha}\cdot \hat{\mathbf{r}}\partial_r + \dfrac{i}{|\mathbf{r}|} \widetilde{\alpha_r}(\widetilde{\beta}\hat{K}-\hbar)
 \end{equation}
@@ -131,7 +131,7 @@ l \rightarrow j = l - 1/2 \\
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{De las 4 ecuaciones, solo dos son separables}}}
 \begin{equation}\label{eq:funciondeonda}
 \phi^{m_j}_{\kappa} (\vec{r} ) = \left( \substack{g_{\kappa}(r)\chi^{m_j}_\kappa (\hat{r}) \\ if_\kappa(r)\chi^{m_j}_{-\kappa} (\hat{r}) } \right) 
 \end{equation}
@@ -175,7 +175,7 @@ En donde $k_C = mc/\hbar$ se denomina el vector de onda de Compton y
 $W_C = E / c\hbar$.
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{Cambiando de variables}}}
 \begin{equation}\label{eq:cdv}
 u_{\kappa}(r) = (k_C + W_C)^{1/2} e^{-\lambda r}(\phi_1 + \phi_2)
 \end{equation}
@@ -189,7 +189,7 @@ En donde $\lambda = (k_C^2 - W_C^2)^{1/2}$
 
 
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{Cambiando de variables}}}
 Haciendo el cambio de variable de $r$ a una variable adimensional $\rho = 2 \lambda r$
 se obtiene:
 
@@ -204,7 +204,7 @@ se obtiene:
 \end{equation}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{La soluci\'on esta data en termino de series de potencias}}}
 \begin{equation}\label{eq:phi1}
 \phi_1(\rho) = \rho^s \sum \limits_{m=0}^{\infty} a_m \rho^m
 \end{equation}
@@ -216,7 +216,7 @@ se obtiene:
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{Solucion en terminos de funciones hipergeometricas}}}
 \begin{equation}\label{eq:sol1}
 \phi_1(\rho) = 	\rho^s a_0 M(1-n',2s+1,\rho)
 \end{equation}
@@ -226,16 +226,16 @@ se obtiene:
 \end{equation}
 \end{frame}
 
-\begin{frame}{condiciones de frontera}
+\begin{frame}{Condiciones de frontera}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{../doc/hypgeo.png}
-\caption*{Comportamiento asint\'otico de la funci\'on hipergeom\'etrica.}
+\caption{Comportamiento asint\'otico de la funci\'on hipergeom\'etrica.}
 \label{fig:hypgeo}
 \end{figure}  
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{Soluci\'on radial:}}}
 
 \begin{equation}
 \begin{split}
@@ -252,7 +252,7 @@ g_{\kappa}(r)=2\lambda (k_C +W_C)^{1/2}e^{-\lambda r}(2\lambda r)^{s-1}a_0 \time
 \end{equation}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{Derivaci\'on de la energia}}}
 \begin{equation}
 n=n'+|\kappa|
 \end{equation}
@@ -271,7 +271,7 @@ E = mc^2 \left(1+\dfrac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
 \end{equation}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\textit{\textbf{Derivaci\'on de la energia}}}
 \begin{equation}\label{eq:enerW4}
 E \approx mc^2 \left(  1- \frac{\xi^2}{2n^2} +\xi^4 \left( \frac{3}{8n^4}-\frac{1}{2n^3 |\kappa|} \right)  \right)
 \end{equation}
@@ -286,14 +286,17 @@ Schr\"odinger
 \Delta E = \frac{Ze^2}{8\pi \epsilon_0 m^2c^2}\frac{\hbar^2}{2} \left\{ \substack{ l \\ -l -1}   \right\}\frac{Z^3}{a^3_0}\frac{1}{n^3 l (l+1/2)(l+1)}
 \end{equation}
 
-Klein-Gordon
+
+Dirac
  \begin{equation}\label{eq:enerWfinal}
 W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{2n^3|\kappa|} \right)
 \end{equation}
-Dirac
+
+Klein-Gordon
 \begin{equation}
 W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{n^3(2l+1)} \right)
 \end{equation}
+
 
 \end{frame}
 
@@ -303,7 +306,7 @@ W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\ep
 
  \item Desdoblamiento de las l\'ineas del orden de $E^2_{Ry}/mc^2$
  \vspace{5mm}
- \item $\alpha\approx 1/137 \implies $ funciona para Z peque\~o
+ \item $\alpha\approx 1/137 \implies $ funciona para Z peque\~no
  \vspace{5mm}
  \item Posibilidad de energ\'ias negativas. Antimateria.
  \vspace{5mm}
@@ -346,11 +349,11 @@ W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\ep
 \begin{itemize}
  \item  Se predijo correctamente los niveles de energ\'ia del \'atomo de Hidr\'ogeno (\'atomo de 1 electr\'on)
   \vspace{1mm}
- \item Concuerda con las l\'ineas de emisi\'on observadas experimentalmente, confirmando as\'i que el \'atomo de Hidr\'ogeno tiene sp\'in $1/2$.
+ \item Concuerda con las l\'ineas de emisi\'on observadas experimentalmente, confirmando as\'i que el electr\'on tiene sp\'in $1/2$.
  \vspace{1mm}
  \item Se formaliza la introducci\'on emp\'irica que hizo Pauli del spin.
  \vspace{1mm}
- \item Advertencia: el espectro predicho no es absolutamente exacto. Ejemplo: $2s^{1/2}  $ y $2p^{1/2}$ no est\'an realmente degenerados. La interacci\'on del electr\'on con el el momento magn\'etico del n\'ucleo (estructura hiperfina) y el efecto Lamb levantan la degeneraci\'on.
+ \item Advertencia: el espectro predicho no es absolutamente exacto. Ejemplo: $2s^{1/2}  $ y $2p^{1/2}$ no est\'an realmente degenerados. La interacci\'on del electr\'on con el momento magn\'etico del n\'ucleo (estructura hiperfina) y el efecto Lamb levantan la degeneraci\'on.
 \end{itemize}
 
 \end{frame}
