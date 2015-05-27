@@ -106,7 +106,7 @@ Luego de esto Sch\"odinger us\'o la relaci\'on relativista entre momento y energ
 
 Curiosamente, la ecuaci\'on de Klein-Gordon fue descubierta antes de la de  Sch\"odinger y aunque la ecuaci\'on de Klein-Gordon se interpreta como una versi\'on relativista de la ecuaci\'on de Sch\"odinger, no se puede hacer el an\'alogo directamente por dos motivos principales: tiene segunda derivada temporal y no conserva densidad de probabilidad. Sus autores propusieron que describ\'ia electrones relativistas, pero dado que no tiene en cuenta el spin del electr\'on hace predicciones incorrectas para la estructura fina del \'atomo de hidr\'ogeno, sobreestimando el patr\'on de desdoblamiento de las l\'ineas.
 
-Ser\'ia Dirac quien, seg\'un cuenta una leyenda, mientras observaba una fogata en una noche de 1928 se dio cuenta que necesitaba una ecuaci\'on de onda relativista linear en el espaciotiempo. Para esto tambi\'en necesit\'o partir de la relaci\'on relativista entre energ\'ia y momento. Lo que obtuvo qued\'o plasmado en los anales de la historia de la ciencia por sus poderosas implicaciones. Siendo la primera teor\'ia en tener en cuenta completamente la relatividad especial en el contexto mec\'anico cu\'antico, pudo hacer un tratamiento riguroso del espectro del \'atomo de hidr\'ogeno. Adem\'as de eso, predijo la existencia de la antimateria, algo de lo que no se ten\'ia ning\'un tipo de evidencia experimental hasta ese momento. Y por si eso fuera poco, provee una justificaci\'on te\'orica a las propuestas fenomenol\'ogicas que hizo Pauli para el spin, mostrando que es una consecuencia del matrimonio entre relatividad y mec\'anica cu\'antica. Las consecuencias se sienten hasta el d\'ia de hoy, en que, en el contexto de teor\'ia cu\'antica de campos, la soluci\'on a la ecuaci\'on ya no interpretar\'ia como una "onda" sino como un "campo", un campo cu\'antico correspondiente a las part\'iculas de spin 1/2.
+Ser\'ia Dirac quien, seg\'un cuenta una leyenda, mientras observaba una fogata en una noche de 1928 se dio cuenta que necesitaba una ecuaci\'on de onda relativista linear en el espaciotiempo. Para esto tambi\'en necesit\'o partir de la relaci\'on relativista entre energ\'ia y momento. Lo que obtuvo qued\'o plasmado en los anales de la historia de la ciencia por sus poderosas implicaciones. Siendo la primera teor\'ia en tener en cuenta completamente la relatividad especial en el contexto mec\'anico cu\'antico, pudo hacer un tratamiento riguroso del espectro del \'atomo de hidr\'ogeno. Adem\'as de eso, predijo la existencia de la antimateria, algo de lo que no se ten\'ia ning\'un tipo de evidencia experimental hasta ese momento. Y por si eso fuera poco, provee una justificaci\'on te\'orica \cite{QFT, CT} a las propuestas fenomenol\'ogicas que hizo Pauli para el spin, mostrando que es una consecuencia del matrimonio entre relatividad y mec\'anica cu\'antica. Las consecuencias se sienten hasta el d\'ia de hoy, en que, en el contexto de teor\'ia cu\'antica de campos, la soluci\'on a la ecuaci\'on ya no interpretar\'ia como una "onda" sino como un "campo", un campo cu\'antico correspondiente a las part\'iculas de spin 1/2.
 
 
 % ------------------------------------- Ecuacion de Dirac --------------------------------------
@@ -491,7 +491,7 @@ en donde para valores negativos de $n'$ y $(2s-1)$ las funciones no convergen.
 
 \begin{figure}[H]
 \centering
-%\includegraphics[scale=0.4]{hypgeo.png}
+\includegraphics[scale=0.4]{hypgeo.png}
 \caption*{Comportamiento asint\'otico de la funci\'on hipergeom\'etrica.}
 \label{fig:hypgeo}
 \end{figure}  
@@ -535,13 +535,13 @@ n'= \frac{W_C \xi}{\lambda}-s=\frac{W_C \xi}{(k^2_{C}-W^2_{C})^{1/2}}-s
 lo que, reorganizando y sustituyendo $n'$, se convierte en
 
 \begin{equation}
-W^2_C = k^2_C \left(1+frac{\xi}{(n-|\kappa|+s)^2} \right)^{-1}
+W^2_C = k^2_C \left(1+\dfrac{\xi}{(n-|\kappa|+s)^2} \right)^{-1}
 \end{equation}
 
 y reemplazando con las definiciones de $k_C$ y $W_C$
 
 \begin{equation}\label{eq:enerW}
-W = mc^2 \left(1+frac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
+E = mc^2 \left(1+\dfrac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
 \end{equation}
 
 Esta expresi\'on depende de $\kappa$, que est\'a asociado tanto al spin como al momento angular orbital. Si se compara con la soluci\'on para el \'atomo de un electr\'on sin spin, se observa la aparici\'on de $l$ en el autovalor de la energ\'ia. En su momento eso levant\'o la degeneraci\'on para un n con varios valores de $l$. Dado que ahora la expresi\'on depende de $\kappa$, la degeneraci\'on se levanta a\'un m\'as para el caso del \'atomo con un solo electr\'on sin spin.
@@ -561,26 +561,26 @@ s\approx \kappa \left( 1-\frac{\xi^2}{2\kappa^2}+\frac{3\xi^4}{8\kappa^4}  \righ
 Ahora, reemplazando \ref{sapprox} en la ecuaci\'on \ref{eq:enerW}, y con algo de \'algebra que se muestra en el ap\'endice, obtenemos:
 
 \begin{equation}\label{eq:enerW2}
-W \approx mc^2 \left( 1+ \frac{\xi^2}{n^2} \left( 1-\frac{\xi^2}{n|\kappa|} + \frac{3\xi^4}{4n|\kappa|\kappa^2} + \frac{\xi^4}{4n^2\kappa^2} \right)^{-1}  \right)^{-1/2}
+E \approx mc^2 \left( 1+ \frac{\xi^2}{n^2} \left( 1-\frac{\xi^2}{n|\kappa|} + \frac{3\xi^4}{4n|\kappa|\kappa^2} + \frac{\xi^4}{4n^2\kappa^2} \right)^{-1}  \right)^{-1/2}
 \end{equation}
 
 donde se despreciaron los t\'erminos en $\xi$ de orden mayor al cuarto. Luego, expandiendo el par\'entesis interno de \ref{eq:enerW2} usando la expresi\'on \ref{eq:AbramSteExp} se obtiene 
 
 
 \begin{equation}\label{eq:enerW3}
-W \approx mc^2 \left( 1+ \frac{\xi^2}{n^2} \left( 1 + \frac{\xi^2}{n|\kappa|} - \frac{3\xi^4}{4n|\kappa|\kappa^2} + \frac{3\xi^4}{4n^2\kappa^2} \right)  \right)^{-1/2}
+E \approx mc^2 \left( 1+ \frac{\xi^2}{n^2} \left( 1 + \frac{\xi^2}{n|\kappa|} - \frac{3\xi^4}{4n|\kappa|\kappa^2} + \frac{3\xi^4}{4n^2\kappa^2} \right)  \right)^{-1/2}
 \end{equation}
 
 y finalmente, como para no perder la costumbre, se puede usar una vez m\'as la expansi\'on \ref{eq:AbramSteExp} (de nuevo conservando t\'erminos hasta cuarto orden) para deshacerse de la ra\'iz cuadradada y el denominador molesto, obteniendo la expresi\'on
 
 \begin{equation}\label{eq:enerW4}
-W\approx mc^2 \left(  1- \frac{\xi^2}{2n^2} +\xi^4 \left( \frac{3}{8n^4}-\frac{1}{2n^3 |\kappa|} \right)  \right)
+E \approx mc^2 \left(  1- \frac{\xi^2}{2n^2} +\xi^4 \left( \frac{3}{8n^4}-\frac{1}{2n^3 |\kappa|} \right)  \right)
 \end{equation}
 
-Ahora, para comparar con el caso no relativista, se obtiene la expresi\'on para $W-mc^2$ (pues en el caso no relativista no hay energ\'ia asociada a la masa en reposo) y se reemplaza la expresi\'on para $\xi$ de su definici\'on, llegando a la expresi\'on 
+Ahora, para comparar con el caso no relativista, se obtiene la expresi\'on para $E-mc^2$ (pues en el caso no relativista no hay energ\'ia asociada a la masa en reposo) y se reemplaza la expresi\'on para $\xi$ de su definici\'on, llegando a la expresi\'on 
 
 \begin{equation}\label{eq:enerWfinal}
-W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{2n^3|\kappa|} \right)
+E-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{2n^3|\kappa|} \right)
 \end{equation}
 
 
@@ -595,7 +595,7 @@ La ecuaci\'on \ref{eq:enerWfinal} debe ser entonces comparada con las expresione
 y 
 
 \begin{equation}
-W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{n^3(2l+1)} \right)
+E-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{n^3(2l+1)} \right)
 \end{equation}
 
 que son la expresiones de Schr\"odinger y de Klein-Gordon para el \'atomo de hidr\'ogeno. Es claro que el primer t\'ermino es el mismo, tanto en la soluci\'on relativista como la no relativista para los niveles de energ\'ia del \'atomo de un electr\'on. El levantamiento de la degeneraci\'on es del orden de $E^2_Ry/mc^2$, donde $E_ry$ es el valor de la energ\'ia no relativista para el estado base del \'atomo del hidr\'ogeno.
@@ -607,7 +607,7 @@ $\xi<1$ siempre se cumplir\'a.
 
 \begin{figure}[H]
 \centering
-%\includegraphics[scale=0.5]{relativistic.png}
+\includegraphics[scale=0.5]{relativistic.png}
 \caption{Niveles de energ\'ia provenientes de la soluci\'on de la ecuaci\'on de Dirac.
 credito de la imagen: \cite{strange}.}
 \label{fig:relativistic}
@@ -616,6 +616,18 @@ credito de la imagen: \cite{strange}.}
 Los resultados de salen de la ecuaci\'on de Dirac y de Klein-Gordon se parecen mucho. La diferencia est\'a en el cambio de $(l+1/2)$ por el n\'umero cu\'antico spin-angular $\kappa$. \'Este es el efecto, entonces, del spin en los niveles de energ\'ia del hidr\'ogeno. Y la prueba reina, el experimento, es la verdadera evidencia del spin del electr\'on: cuando se miden los desdoblamientos experimentalmente, el espectro observado es consistente con la ecuaci\'on de Dirac, no con la de Klein-Gordon.
 
 Comparando ahora con el resultado de Schr\"odinger, se puede ver que falta la correcci\'on del t\'ermino $3/8n^4$ que hacen tanto Dirac como Klein-Gordon. Cabe recordar que el resultado de Schr\"odinger proviene de hacer un tratamiento perturbativo al acoplamiento spin-\'orbita (en una ecuaci\'on no relativista, claro). El t\'ermino de correcci\'on asociado a $1/n^3$ ocurre en las tres expresiones, as\'i que es dif\'icil asignarlo a alg\'un t\'ermino en espec\'ifico del Hamiltoniano, pero los resultados sugieren que se debe, al menos en parte, al acoplamiento spin.\'orbita.
+
+\section{Conclusiones}
+
+Se predijo correctamente los niveles de energ\'ia del \'atmo de Hidr\'ogeno,
+esta expresi\'on es v\'alida para todos los \'atomos. Usando la ecuaci\'on 
+de Dirac la cual es relativista y ademas es v\'alida para part\'iculas 
+de $s=1/2$. Esto concuerda con las l\'ineas de emisi\'on observadas para 
+el \'atomo de Hidr\'ogeno, confirmando as\'i  que el \'atomo de Hidr\'ogeno 
+tiene sp\'in $1/2$. Hecho que hab\'ia sido propuesto previamente por Pauli
+sin fundamento te\'orico riguroso.
+
+
 
 %------------------------------------------------APENDICE----------------------
 
@@ -948,7 +960,7 @@ s\approx \kappa \left( 1-\frac{\xi^2}{2\kappa^2}+\frac{3\xi^4}{8\kappa^4}  \righ
 Por lo tanto, se puede hacer el reemplazo en la ecuaci\'on \ref{eq:enerW}
 
 \begin{equation}
-W = mc^2 \left(1+frac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
+W = mc^2 \left(1+\dfrac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
 \end{equation}
 
 Para facilitar los c\'alculos, se proceder\'a a hacer el reemplazo solamente del denominador y luego se pone dentro de toda la expresi\'on, as\'i, se tiene
