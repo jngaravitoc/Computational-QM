@@ -91,7 +91,7 @@ Gordon respectivamente.
 %	ESSAY BODY
 %----------------------------------------------------------------------------------------
 
-\section{Antecedentes historicos}
+\section{Estado del arte}
 
 
 La mec\'anica cu\'antica tiene una particularidad entre los diferentes cuerpos te\'oricos de las ramas de la f\'isica. A diferencia de la mec\'anica newtoniana o la relatividad especial, desarrolladas por Newton y Einstein respectivamente, la mec\'anica cu\'antica tiene muchos padres y una historia accidentada y llena de baches. Ni siquiera la electrodin\'amica tiene esa caracter\'istica, pues, a pesar de ser el producto del trabajo conjunto de muchos hombres de ciencia, fue "empaquetada" y sintetizada en su forma actual por Maxwell. Esto les da una cierta unidad: un orden y caracter l\'ogico propio de ser el producto de una sola mente. El ep\'itome de esa naturaleza est\'a condensado en la famosa frase de Richard Feynman en que seguraba estar convencido de que nadie realmente entiende la mec\'anica cu\'antica. Pero eso no ha impedido el avance de esta rama de la f\'isica. Si bien no hay un consenso general sobre sus postulados o lo que significa, la mec\'anica cu\'antica ha avanzado de forma inimaginable desde sus ca\'oticos or\'igenes, siendo la ecuaci\'on de Schr\"odinger uno de sus pilares (un postulado, en otras famosas palabras de Feynman: "Where did we get that (equation) from? Nowhere. It is not possible to derive it from anything you know. It came out of the mind of Schr\"odinger").
@@ -491,7 +491,7 @@ en donde para valores negativos de $n'$ y $(2s-1)$ las funciones no convergen.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{hypgeo.png}
+%\includegraphics[scale=0.4]{hypgeo.png}
 \caption*{Comportamiento asint\'otico de la funci\'on hipergeom\'etrica.}
 \label{fig:hypgeo}
 \end{figure}  
@@ -586,6 +586,20 @@ W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\ep
 
 \subsection{Discusi\'on}
 
+La ecuaci\'on \ref{eq:enerWfinal} debe ser entonces comparada con las expresiones 
+
+\begin{equation}
+\Delta E = \frac{Ze^2}{8\pi \epsilon_0 m^2c^2}\frac{\hbar^2}{2} \left\{ \substack{ l \\ -l -1}   \right\}\frac{Z^3}{a^3_0}\frac{1}{n^3 l (l+1/2)(l+1)}
+\end{equation}
+
+y 
+
+\begin{equation}
+W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{n^3(2l+1)} \right)
+\end{equation}
+
+que son la expresiones de Schr\"odinger y de Klein-Gordon para el \'atomo de hidr\'ogeno. Es claro que el primer t\'ermino es el mismo, tanto en la soluci\'on relativista como la no relativista para los niveles de energ\'ia del \'atomo de un electr\'on. El levantamiento de la degeneraci\'on es del orden de $E^2_Ry/mc^2$, donde $E_ry$ es el valor de la energ\'ia no relativista para el estado base del \'atomo del hidr\'ogeno.
+
 El calculo de la energ\'ia es valida siempre y cuando $\xi$ es peque\~no lo que claramente
 se cumple para \'atomos con $Z$ peque\~no. Sin embargo $Z = 104 $ es el valor m\'aximo 
 de $Z$ que encontramos en la naturaleza. Y como $\xi$ depende de $\alpha \approx 137$
@@ -593,11 +607,15 @@ $\xi<1$ siempre se cumplir\'a.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{relativistic.png}
+%\includegraphics[scale=0.5]{relativistic.png}
 \caption{Niveles de energ\'ia provenientes de la soluci\'on de la ecuaci\'on de Dirac.
 credito de la imagen: \cite{strange}.}
 \label{fig:relativistic}
 \end{figure}
+
+Los resultados de salen de la ecuaci\'on de Dirac y de Klein-Gordon se parecen mucho. La diferencia est\'a en el cambio de $(l+1/2)$ por el n\'umero cu\'antico spin-angular $\kappa$. \'Este es el efecto, entonces, del spin en los niveles de energ\'ia del hidr\'ogeno. Y la prueba reina, el experimento, es la verdadera evidencia del spin del electr\'on: cuando se miden los desdoblamientos experimentalmente, el espectro observado es consistente con la ecuaci\'on de Dirac, no con la de Klein-Gordon.
+
+Comparando ahora con el resultado de Schr\"odinger, se puede ver que falta la correcci\'on del t\'ermino $3/8n^4$ que hacen tanto Dirac como Klein-Gordon. Cabe recordar que el resultado de Schr\"odinger proviene de hacer un tratamiento perturbativo al acoplamiento spin-\'orbita (en una ecuaci\'on no relativista, claro). El t\'ermino de correcci\'on asociado a $1/n^3$ ocurre en las tres expresiones, as\'i que es dif\'icil asignarlo a alg\'un t\'ermino en espec\'ifico del Hamiltoniano, pero los resultados sugieren que se debe, al menos en parte, al acoplamiento spin.\'orbita.
 
 %------------------------------------------------APENDICE----------------------
 
