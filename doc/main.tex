@@ -56,7 +56,7 @@
 \title{\textbf{\'Atomo de Hidrogeno relativista}\\ % Title
 La perspectiva de Dirac} % Subtitle
 
-\author{\textsc{Juan David Orjuela Zu\~niga \\ Juan Nicol\'as Garavito Camargo} % Author
+\author{\textsc{Juan Nicol\'as Garavito Camargo \\ Juan David Orjuela Z\'u\~niga} % Author
 \\{\textit{Departamento de F\'isica\\}
 \textit{Universidad de los Andes, Bogot\'a, Colombia}}} % Institution
 
@@ -106,31 +106,31 @@ Ser\'ia Dirac quien, seg\'un cuenta una leyenda, mientras observaba una fogata e
 % ------------------------------------- Ecuacion de Dirac --------------------------------------
 \section{Ecuaci\'on de Dirac}
 La ecuaci\'on de Dirac al igual que la ecuaci\'on de Klein-Gordon es una 
-ecuaci\'on relativista de la mec\'anica cuantica. Adem\'as tiene en cuenta
+ecuaci\'on relativista de la mec\'anica cu\'antica. Adem\'as tiene en cuenta
 part\'iculas de sp\'in $s=1/2$ tales como electrones, protones, neutrones etc. 
 
-En esta secci\'on se derivara la ecuaci\'on de Dirac mediante argumentos
+En esta secci\'on se derivar\'a la ecuaci\'on de Dirac mediante argumentos
 de simetr\'ia (mostrando as\'i una manera alternativa a la vista en clase). 
-Una ecuaci\'on relativista debe ser simetrica tanto en el tiempo como en el 
+Una ecuaci\'on relativista debe ser sim\'etrica tanto en el tiempo como en el 
 espacio, esto debido a que el tiempo y el espacio son una misma cantidad 
 en las transformaciones de Lorentz.
 
-Es conocido de relatividad especial que la energ\'ia de una part\'icual esta dada
+Es conocido de relatividad especial que la energ\'ia de una part\'icual est\'a dada
 por:
 
 \begin{equation}
 E^2 = m^2c^4 + p^2c^2
 \end{equation}
 
-Si expresamos $E$ y $p$ como operadores obtenemos la ecuaci\'on de Klein-Gordon:
+Si se expresan $E$ y $p$ como operadores se obtiene la ecuaci\'on de Klein-Gordon:
 
 \begin{equation}
 \left( \nabla^2 - \dfrac{1}{c^2}\dfrac{\partial^2}{\partial t^2} - \dfrac{m^2c^2}{\hbar^2}   \right)\psi(\mathbf{r}, t) = 0
 \end{equation} 
 
 
-Sin embargo una forma a\'un mas general ser\'ia permitir a la funci\'on de onda tener $N$ componentes. La forma mas 
-general posible para la derivida temporal de la ecuaci\'on de onda \cite{dirac1,dirac2}:
+Sin embargo una forma a\'un m\'as general ser\'ia permitir a la funci\'on de onda tener $N$ componentes. La forma m\'as 
+general posible para la derivada temporal de la ecuaci\'on de onda \cite{dirac1,dirac2}:
 
 \begin{equation}\label{eq:dirac1}
 \dfrac{1}{c}\dfrac{\partial \psi_i(\mathbf{r},t)}{\partial t} =
@@ -138,9 +138,9 @@ general posible para la derivida temporal de la ecuaci\'on de onda \cite{dirac1,
 \dfrac{imc}{\hbar}\sum \limits_{n=1}^{N}\beta_{i,n}\psi_n(\mathbf{r}, t)
 \end{equation}
 
-Donde el primer termino del lado derecho corresponde a la contribucion 
+Donde el primer termino del lado derecho corresponde a la contribuci\'on 
 de todas las derivadas espaciales de todas las componentes de la funci\'on 
-de onda y el segundo termino es una combinacion lineal de todas las 
+de onda y el segundo t\'ermino es una combinaci\'on lineal de todas las 
 componentes de $\psi$. $\alpha$ y $\beta$ son constantes que hacen que la 
 ecuaci\'on tenga las dimensiones correctas. (\ref{eq:dirac1}) puede escribirse
 de forma matricial haciendo la suma de todas las componentes $N$.   
@@ -150,9 +150,9 @@ i\hbar \partial_t \psi(\mathbf{r},t) = \hat{\mathbf{H}}\psi(\mathbf{r},t) =
 (c\widetilde{\alpha}\cdot \hat{\mathbf{p}} + \widetilde{\beta}mc^2)\psi(\mathbf{r},t)
 \end{equation}
 
-Donde $\partial_t = \partial / \partial t$ y $\widetilde{\alpha}$ y $\widetilde{\beta}$ son matrices de dimension $N$, 
+Donde $\partial_t = \partial / \partial t$ y $\widetilde{\alpha}$ y $\widetilde{\beta}$ son matrices de dimensi\'on $N$, 
 estas se llaman \textbf{matrices de Dirac}.
-Como se vio en clase estas matrices deben satisfacer las siguientes condiciones:\\
+Como se vio en clase, estas matrices deben satisfacer las siguientes condiciones:\\
 
 \[
 \alpha_i^2 = \beta^2 = I \\
@@ -167,7 +167,7 @@ Como se vio en clase estas matrices deben satisfacer las siguientes condiciones:
 i,j=x, y, z\\
 \] 
 
-Las matrices que cumplen con estas condiciones para $N=4$ estan definidas en terminos
+Las matrices que cumplen con estas condiciones para $N=4$ est\'an definidas en t\'erminos
 de las matrices de Pauli:
 
 \begin{equation}
@@ -186,9 +186,9 @@ de las matrices de Pauli:
 \end{pmatrix}
 \end{equation}
 
-Donde $\widetilde{\mathbf{I}}_2$ son matrices unitarias de dimension 2. 
+Donde $\widetilde{\mathbf{I}}_2$ son matrices unitarias de dimensi\'on 2. 
 Adicionalmente las matrices de \textbf{spin} de Pauli de 4 dimensiones
-estan definidas como:
+est\'an definidas como:
 
 \begin{equation}
 \widetilde{\sigma}_{4i}=
@@ -206,7 +206,7 @@ Las propiedades de estas matrices se pueden ver en \S$\ref{sec:gamma5}$.
 
 %----------Coordenadas radiales-----------------------
 
-Para el \'atomo de Hidrogeno debemos solucionar (\ref{dirac})
+Para el \'atomo de Hidr\'ogeno se debe solucionar (\ref{dirac})
 con un potencial $V(r)$ definido como:
 
 \begin{equation}
@@ -220,21 +220,21 @@ $\xi$ definida como:
 \xi = \dfrac{Ze^2}{4\pi \epsilon_0 \hbar c}
 \end{equation}
 
-La ecuaci\'ond de Dir\'ac para este potencial se expresa como:
+La ecuaci\'on de Dir\'ac para este potencial se expresa como:
 
 \begin{equation}\label{eq:diracvr}
 (c \widetilde{\alpha} \cdot \hat{p} + \widetilde{\beta} m c^2 + V(r) ) \phi(r) = E \phi (r)
 \end{equation}
 
 Para solucionar esta ecuaci\'on debemos primero transformarla a coordenadas
-esfericas. En la siguiente secci\'on se desarrolla en detalle esta transformaci\'on.
-El desarrollo matematico realizado en este trabajo sigue el procedimiento 
+esf\'ericas. En la siguiente secci\'on se desarrolla en detalle esta transformaci\'on.
+El desarrollo matem\'atico realizado en este trabajo sigue el procedimiento 
 explicado en \cite{strange}, todos los pasos intermedios son desarrollados con 
 detalle en \S \ref{sec:apendice}. 
 %---------------------------------Coordenadas esfericas ------------
 \subsection{Ecuaci\'on de Dirac en coordenadas esfericas}
 
-En (\ref{eq:diracvr}) el termino que se debe transformar a coordenadas radiales
+En (\ref{eq:diracvr}) el t\'ermino que se debe transformar a coordenadas radiales
  es $\widetilde{\alpha} \cdot \hat{\mathbf{p}}$, ya que $\widetilde{\beta}$ es independiente del sistema de coordenadas. 
 
 \begin{equation}\label{eq:alphap}
@@ -247,28 +247,28 @@ Haciendo uso de la identidad vectorial:
 \nabla = \hat{\mathbf{r}}(\hat{\mathbf{r}}\cdot \nabla) - \hat{\mathbf{r}} \times (\hat{\mathbf{r}} \times \nabla)  
 \end{equation}
 
-Adem\'as teniendo en cuenta la simetr\'ia esferica del sistema, es decir donde $\partial/\partial \theta = 0$
+Adem\'as teniendo en cuenta la simetr\'ia esf\'erica del sistema, es decir donde $\partial/\partial \theta = 0$
 y $\partial/\partial \phi = 0$,  (\ref{eq:identity}) se puede expresar como:
 
 \begin{equation}\label{eq:nabla1}
 \mathbf\nabla = \hat{\mathbf{r}}(\dfrac{\partial}{\partial r}) - \hat{\mathbf{r}} \times (\hat{\mathbf{r}} \times \nabla)
 \end{equation}
 
-El segundo termino en (\ref{eq:nabla1}) se puede expresar en terminos del momento angular $\mathbf{L} = -i\hbar \mathbf{r} \times \mathbf{\nabla}$.
+El segundo t\'ermino en (\ref{eq:nabla1}) se puede expresar en t\'erminos del momento angular $\mathbf{L} = -i\hbar \mathbf{r} \times \mathbf{\nabla}$.
 as\'i:
 
 \begin{equation}\label{eq:nabla}
 \mathbf{\nabla} =  \hat{\mathbf{r}}(\dfrac{\partial}{\partial r}) - \dfrac{i}{\hbar}\dfrac{\hat{\mathbf{r}}}{r} \times \mathbf{L}
 \end{equation}
 
-Por lo tanto (\ref{eq:alphap}) se puede escribir en terminos de (\ref{eq:nabla}) como:
+Por lo tanto (\ref{eq:alphap}) se puede escribir en t\'erminos de (\ref{eq:nabla}) como:
 
 \begin{equation}\label{eq:alphap2}
 \widetilde{\alpha}\cdot \mathbf{\hat{p}} = -i\hbar \widetilde({\alpha}\cdot \hat{\mathbf{r}}(\dfrac{\partial}{\partial r}) - 
 \dfrac{i}{\hbar}\widetilde{\alpha}\cdot \dfrac{\hat{\mathbf{r}}}{r} \times \mathbf{L})
 \end{equation}
 
-El \'ultimo termino de la derecha de (\ref{eq:alphap2}) se puede expresar como:
+El \'ultimo t\'ermino de la derecha de (\ref{eq:alphap2}) se puede expresar como:
 
 \begin{equation}\label{eq:prop1}
 \widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\alpha} \cdot \hat{\mathbf{L}} = i\widetilde{\sigma}\cdot \hat{\mathbf{r}} \times \mathbf{L}
@@ -283,7 +283,7 @@ En donde se uso la relaci\'on:
 
 Donde $\hat{\mathbf{A}}$ y $\hat{\mathbf{B}}$ son vectores arbitrarios, 
 multiplicando a ambos lados de (\ref{eq:prop1}) por $\gamma_5$ (ver \S \ref{sec:gamma5}) 
-obtenemos:   
+se obtiene:   
 
 \begin{equation}
 i\widetilde{\alpha}\cdot\hat{\mathbf{r}}\widetilde{\sigma} \cdot \hat{\mathbf{L}} = -\widetilde{\alpha}\cdot \hat{\mathbf{r}} \times \mathbf{L}
@@ -296,20 +296,20 @@ Por lo tanto (ref{eq:alphap2}) se puede escribir como:
 \widetilde{\alpha}\cdot \hat{\mathbf{r}}\widetilde{\sigma}\cdot \hat{\mathbf{L}}
 \end{equation} 
 
-Finalmente escribiendo el ultimo termino de (\ref{eq:alphap3}) en terminos
-del vector $\hat{K}$ (Ver pasos intermedios en \S \ref{sec:k}) se obtiene:
+Finalmente escribiendo el \'ultimo t\'ermino de (\ref{eq:alphap3}) en t\'erminos
+del vector $\hat{K}$ (ver pasos intermedios en \S \ref{sec:k}) se obtiene:
 
 \begin{equation}\label{alphap4}
 \widetilde{\alpha} \cdot \mathbf{\hat{p}} = -i\hbar \widetilde{\alpha}\cdot \hat{\mathbf{r}}\partial_r + \dfrac{i}{|\mathbf{r}|} \widetilde{\alpha_r}(\widetilde{\beta}\hat{K}-\hbar)
 \end{equation}
 
-Reemplazando este resultado en (\ref{eq:diracvr}) se obtiene la ecuaci\'on de Dirac en coordenadas esfericas.
+Reemplazando este resultado en (\ref{eq:diracvr}) se obtiene la ecuaci\'on de Dirac en coordenadas esf\'ericas.
 
 \begin{equation}\label{eq:radialdirac}
 \left (ic\widetilde{\gamma_5}\widetilde{\sigma_r} \left (\hbar \partial_r + \dfrac{\hbar}{r} -  \dfrac{\widetilde{\beta}\hat{K}}{r}\right )  + \widetilde{\beta} m c^2 + V(r) \right ) \phi(r) = E \phi (r)
 \end{equation}
 
-Vamos entonces a insistir que nuestro autoestado de 4 componentes sea lo m\'as parecido posible a los espinores de dos componentes de Pauli:
+Se debe insistir entonces que nuestro autoestado de 4 componentes sea lo m\'as parecido posible a los espinores de dos componentes de Pauli:
 
 \begin{equation}\label{eq:funciondeonda}
 \phi^{m_j}_{\kappa} (\vec{r} ) = \left( \substack{g_{\kappa}(r)\chi^{m_j}_\kappa (\hat{r}) \\ if_\kappa(r)\chi^{m_j}_{-\kappa} (\hat{r}) } \right) 
@@ -317,8 +317,8 @@ Vamos entonces a insistir que nuestro autoestado de 4 componentes sea lo m\'as p
 
 En donde $\chi_{\kappa}^{mj}$ son funciones spin-angulares. Es importante
 recordar que en el caso relativista las funciones radiales cambian y 
-cuando tenemos en cuenta el sp\'in se introducen los spinores de Pauli
-en la funci\'on de onda. Substituyendo (\ref{eq:funciondeonda}) en 
+cuando se tiene en cuenta el sp\'in se introducen los spinores de Pauli
+en la funci\'on de onda. Sustituyendo (\ref{eq:funciondeonda}) en 
 (\ref{eq:radialdirac}) se encuentran 4 ecuaciones de las cuales 2 son 
 separables:
  
@@ -346,7 +346,7 @@ radial de la autofunci\'on es real. Se pueden reescribir entonces como:
 \frac{\partial f_{\kappa}(r)}{\partial r} =\frac{\kappa-1}{r}f_{\kappa}(r)-\frac{1}{c\hbar}(E-V(r)-mc^2)g_{\kappa}(r)
 \end{equation}
 
-Que es la forma usual de la ecuaci\'on de radial de Dirac. Sin embargo, a menudo es \'util hacer los reemplazos $u_{\kappa}(r)=rg_{\kappa}(r)$ y $v_{\kappa}(r)=rg_{\kappa}(r)$, lo que permite que la ecuaci\'on se vea as\'i
+Que es la forma usual de la ecuaci\'on radial de Dirac. Sin embargo, a menudo es \'util hacer los reemplazos $u_{\kappa}(r)=rg_{\kappa}(r)$ y $v_{\kappa}(r)=rg_{\kappa}(r)$, lo que permite que la ecuaci\'on se vea as\'i
 
 
 \begin{equation}\label{eq:rad1}
@@ -370,7 +370,7 @@ obtiene:
 \left ( W_C + \dfrac{\xi}{r} - k_C \right )u_{\kappa}(r)
 \end{equation}
 
-En donde $k_C = mc/\hbar$ se denomina el vecto de onda de Compton y 
+En donde $k_C = mc/\hbar$ se denomina el vector de onda de Compton y 
 $W_C = E / c\hbar$.
 
  % -----------------------------------_Solucion ---------------------------
@@ -380,12 +380,12 @@ $W_C = E / c\hbar$.
 
 En esta secci\'on en particular hay un alto desarrollo matem \'atico 
 el cual es inevitable para llegar a la soluc\'ion del \'atomo 
-de Hidrogeno, con el fin de no perderse en estos procedimientos
+de hidr\'ogeno, con el fin de no perderse en estos procedimientos
 los pasos detallados se presentan en \S \ref{sec:pasoapaso} mientras
 que aqu\'i se usan los resultados de estos procesos.
  
 Ahora con dos ecuaciones para solucionar que representan  la ecuaci\'on 
-de Dirac en coordenadas esfericas para el \'atomo de Hidrogeno
+de Dirac en coordenadas esf\'ericas para el \'atomo de Hidr\'ogeno
 (\ref{eq:Hrad1}) y (\ref{eq:Hrad2}). Es conveniente entonces 
 realizar el siguiente cambio de variables.
 
@@ -429,7 +429,7 @@ se obtiene:
 \end{equation}
 
 Ahora bien las ecuaciones (\ref{eq:sol1}) y (\ref{eq:sol2}) tienen soluci\'on. 
-Sin embargo la soluci\'on esta dada en temrinos de una funcion complicada, 
+Sin embargo la soluci\'on est\'a dada en t\'erminos de una funci\'on complicada, 
 por lo tanto se sustituye por una soluci\'on de series de potencias para 
 $\rho$ de la forma:
 
@@ -442,7 +442,7 @@ $\rho$ de la forma:
 \phi_2(\rho) = \rho^s \sum \limits_{m=0}^{\infty} b_m \rho^m
 \end{equation}
 
-Donde los coeficientes $a_m$ y $b_m$ estan definidos como (El lector interesado 
+Donde los coeficientes $a_m$ y $b_m$ est\'an definidos como (el lector interesado 
 puedo ver el desarrollo detallado en el ap\'endice):
 
 \begin{equation}
@@ -472,7 +472,7 @@ se pueden expresar las soluciones as\'i:
 \phi_1(\rho) = 	\rho^s a_0 M(1-n',2s+1,\rho)
 \end{equation}
 
-Donde $M$ es la funcion hipergeometrica. De manera an\'aloga para $\phi_2(\rho)$ obtenemos:
+Donde $M$ es la funci\'on hipergeom\'etrica. De manera an\'aloga para $\phi_2(\rho)$ obtenemos:
 
 \begin{equation}\label{eq:sol2}
 \phi_2(\rho) = \rho^s b_0 M(-n',2s+1,\rho) = \rho^s \dfrac{\kappa - \xi kc / \lambda}{n'} a_0 M(-n',2s+1,\rho)
@@ -486,11 +486,11 @@ en donde para valores negativos de $n'$ y $(2s-1)$ las funciones no convergen.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{hypgeo.png}
-\caption*{Comportamiento asint\'otico de la funci\'on hipergeometrica.}
+\caption*{Comportamiento asint\'otico de la funci\'on hipergeom\'etrica.}
 \label{fig:hypgeo}
 \end{figure}  
 
-Para $n' = 0$ la funci\'on hipergeometrica converge pero las funciones (\ref{eq:sol2}) y (\ref{eq:sol1})
+Para $n' = 0$ la funci\'on hipergeom\'etrica converge pero las funciones (\ref{eq:sol2}) y (\ref{eq:sol1})
 divergen. Por lo tanto si $n'=0$ la constante $a_0 = 0$ para (\ref{eq:sol1}) y $\kappa - \xi kc / \lambda$
 para (\ref{eq:sol2}), lo cual implica que para $n'=0$ $\kappa > 0$. 
 
@@ -587,7 +587,7 @@ $\xi<1$ siempre se cumplir\'a.
 
 %------------------------------------------------APENDICE----------------------
 
-\section{Ap\'endice: Demostraci\'ones y desarrollos matematicos}\label{sec:apendice}
+\section{Ap\'endice: Demostraciones y desarrollos matem\'aticos}\label{sec:apendice}
 
 \subsection{Propiedades de las matrices $\widetilde{\alpha}$, $\widetilde{\beta}$,  
 $\widetilde{\sigma}$ y $\widetilde{\gamma}_5$}\label{sec:gamma5}
@@ -725,9 +725,9 @@ l \rightarrow j = l - 1/2 \\
 \]  
 
 
-\subsection{Desarrollos matematicos detallados de la \S \ref{sec:solucion}}\label{sec:pasoapaso}
+\subsection{Desarrollos matem\'aticos detallados de la \S \ref{sec:solucion}}\label{sec:pasoapaso}
 
-\subsubsection{Cmabio de variable a $\phi_1$ y $\phi_2$}
+\subsubsection{Cambio de variable a $\phi_1$ y $\phi_2$}
 
 Reemplazando (\ref{eq:cdv}) en (\ref{eq:Hrad1})  se obtiene:
 
@@ -775,7 +775,7 @@ Sumando  (\ref{eq:phi1-1}) y  (\ref{eq:phi2-1}) obtenemos:
 - \left( W_C + \dfrac{\xi}{r} - k_C  \right )(k_C + w_C)(\phi_1 + \phi_2) 
 \]
 
-Haciendo el algebra de los dos ultimos terminos se encuentra:
+Haciendo el algebra de los dos \'ultimos t\'erminos se encuentra:
 
 \[
 2 \lambda \dfrac{\partial \phi_1}{\partial r} -  2 \lambda^2  \phi_1 + 2\dfrac{\kappa \lambda}{r}\phi_2
@@ -787,7 +787,7 @@ Haciendo el algebra de los dos ultimos terminos se encuentra:
 + K_C (k_C - W_C)(\phi_1 - \phi_2) + k_C (k_C + W_C)(\phi_1 + \phi_2)
 \]
 
-Abriendo los terminos en parentesis se obtiene:
+Abriendo los t\'erminos en par\'entesis se obtiene:
 
 \[
 2 \lambda \dfrac{\partial \phi_1}{\partial r} -  2 \lambda^2  \phi_1 + 2\dfrac{\kappa \lambda}{r}\phi_2
@@ -795,14 +795,14 @@ Abriendo los terminos en parentesis se obtiene:
 + 2 k_C^2 \phi_1  + k_C w_C \phi_2
 \]
 
-Simplificando terminos obtenemos:
+Simplificando t\'erminos obtenemos:
 
 \[
  2 \lambda \dfrac{\partial \phi_1}{\partial r} -  2 \lambda^2  \phi_1 + 2\dfrac{\kappa \lambda}{r}\phi_2
 = 2\lambda^2 \phi_1 - 2 \dfrac{\xi}{r}k_C \phi_2 - 2\dfrac{\xi}{r}W_C \phi_1
 \]
 
-dividiendo por $2$ toda la ecuacion obtenemos y organizando terminos obtenemos:
+dividiendo por $2$ toda la ecuaci\'on y organizando t\'erminos obtenemos:
 
 \begin{equation}
 \lambda \dfrac{\partial \phi_1}{\partial r} - 2 \lambda^2 \phi_1 + \dfrac{\kappa \lambda}{r} \phi_2  + \dfrac{\xi W_C}{r} \phi_1 
@@ -815,7 +815,7 @@ De manera an\'aloga restando (\ref{eq:phi1-1}) y  (\ref{eq:phi2-1}) se obtiene:
 \lambda \dfrac{\partial \phi_2}{\partial r}  + \dfrac{\kappa \lambda}{r} \phi_1  - \dfrac{\xi W_C}{r} \phi_2 - \dfrac{\xi k_C}{r} \phi_1 = 0
 \end{equation}
 
-finalemnte si $\rho = 2\lambda r$ y $d\rho = 2 \lambda dr$ se obtiene:
+finalmente si $\rho = 2\lambda r$ y $d\rho = 2 \lambda dr$ se obtiene:
 
 \[
 2\lambda^2 \dfrac{\partial \phi_1}{\partial \rho} - 2\lambda^2 \phi_1 + 2 \dfrac{\kappa \lambda^2 }{\rho} \phi_2 
@@ -874,14 +874,14 @@ s = \pm \sqrt{\kappa^2 - \xi^2}
 \]
 
 Siempre se escoge el signo positivo en la soluci\'on de $s$ debido a que se debe garantizar siempre
-que las ecuaciones (\ref{eq:phi1})  y (\ref{eq:phi2}) sean cuadrado integrables. Es de interes entonces
+que las ecuaciones (\ref{eq:phi1})  y (\ref{eq:phi2}) sean de cuadrado integrable. Es de inter\'es entonces
 encontrar las relaciones de recurrencia para $a_m$ y $b_m$, por lo tanto se despeja $b_m/a_m$ de (\ref{eq:bm})
 
 \begin{equation}\label{eq:ambm}
 \dfrac{b_m}{a_m} = \dfrac{\kappa - \xi kc/\lambda}{Wc\xi /\lambda - m - s} = \dfrac{\kappa - \xi kc/\lambda}{n'-m}
 \end{equation} 
 
-En donde se definio $n' = Wc \xi /\lambda - s$. Reemplazando (\ref{eq:ambm}) en (\ref{eq:am}) se obtiene:
+En donde se defini\'o $n' = Wc \xi /\lambda - s$. Reemplazando (\ref{eq:ambm}) en (\ref{eq:am}) se obtiene:
 
 \begin{equation}\label{eq:am-1}
 a_m = - \dfrac{n-m}{m(2s+m)}a_{m-1}
@@ -893,7 +893,7 @@ Que para el caso de $m=0$ se obtiene:
 b_0 = \dfrac{\kappa - \xi kc/\lambda}{n'}a_0
 \end{equation}
 
-De (\ref{eq:am-1}) se puede ver que la relacion de recurrencia para $a_m$ es:
+De (\ref{eq:am-1}) se puede ver que la relaci\'on de recurrencia para $a_m$ es:
 
 \begin{equation}
 a_m = (-1)^m \dfrac{(n'-1)(n'-2)\cdot\cdot\cdot(n'-m)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}a_0
