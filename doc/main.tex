@@ -494,6 +494,90 @@ Para $n' = 0$ la funci\'on hipergeometrica converge pero las funciones (\ref{eq:
 divergen. Por lo tanto si $n'=0$ la constante $a_0 = 0$ para (\ref{eq:sol1}) y $\kappa - \xi kc / \lambda$
 para (\ref{eq:sol2}), lo cual implica que para $n'=0$ $\kappa > 0$. 
 
+
+
+
+
+Con eso se habr\'ian resuelto las partes radiales de las funciones de onda para el \'atomo de hidr\'ogeno. Combinando las definiciones de $u(r)$, $v(r)$ y $\rho$ se encuentran las expresiones definitivas para $g(r)$ y $f(r)$
+
+\begin{equation}
+\begin{split}
+f_{\kappa}(r)=2\lambda (k_C -W_C)^{1/2}e^{-\lambda r}(2\lambda r)^{s-1}a_0 \times \\
+\left( M(1-n',2s+1,2\lambda r) - \frac{\kappa-\xi k_C /\lambda}{n'} M(-n',2s+1,2\lambda r) \right)
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+g_{\kappa}(r)=2\lambda (k_C +W_C)^{1/2}e^{-\lambda r}(2\lambda r)^{s-1}a_0 \times \\
+\left( M(1-n',2s+1,2\lambda r) - \frac{\kappa-\xi k_C /\lambda}{n'} M(-n',2s+1,2\lambda r) \right)
+\end{split}
+\end{equation}
+
+que son los autovectores. Para hallar los autovalores es \'util definir como n\'umero cu\'antico principal 
+
+\begin{equation}
+n=n'+|\kappa|
+\end{equation}
+
+Recordando la definici\'on de $n'$, se puede ver que eso conlleva a una expresi\'on para los autovalores de la energ\'ia
+
+\begin{equation}
+n'= \frac{W_C \xi}{\lambda}-s=\frac{W_C \xi}{(k^2_{C}-W^2_{C})^{1/2}}-s
+\end{equation}
+
+lo que, reorganizando y sustituyendo $n'$, se convierte en
+
+\begin{equation}
+W^2_C = k^2_C \left(1+frac{\xi}{(n-|\kappa|+s)^2} \right)^{-1}
+\end{equation}
+
+y reemplazando con las definiciones de $k_C$ y $W_C$
+
+\begin{equation}\label{eq:enerW}
+W = mc^2 \left(1+frac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
+\end{equation}
+
+Esta expresi\'on depende de $\kappa$, que est\'a asociado tanto al spin como al momento angular orbital. Si se compara con la soluci\'on para el \'atomo de un electr\'on sin spin, se observa la aparici\'on de $l$ en el autovalor de la energ\'ia. En su momento eso levant\'o la degeneraci\'on para un n con varios valores de $l$. Dado que ahora la expresi\'on depende de $\kappa$, la degeneraci\'on se levanta a\'un m\'as para el caso del \'atomo con un solo electr\'on sin spin.
+
+Tratando de hacer la conexi\'on con los autovalores no relativistas del \'atomo de un electr\'on se puede encontrar lo que ser\'ian los t\'erminos de correcci\'on relativista. Recordando que se encontr\'o que $s=+\sqrt{\kappa^2 - \xi^2}=+|\kappa|\sqrt{1+\xi^2/\kappa^2}$, se puede hacer la expansi\'on usando la expresi\'on
+
+\begin{equation}\label{eq:AbramSteExp}
+(1+x)^p =1+px+\frac{p(p-1)x^2}{2!}+\frac{p(p-1)(p-2)x^3}{3!}+...
+\end{equation}
+
+lo que conlleva que
+
+\begin{equation}\label{sapprox}
+s\approx \kappa \left( 1-\frac{\xi^2}{2\kappa^2}+\frac{3\xi^4}{8\kappa^4}  \right)
+\end{equation}
+
+Ahora, reemplazando \ref{sapprox} en la ecuaci\'on \ref{eq:enerW}, y con algo de \'algebra que se muestra en el ap\'endice, obtenemos:
+
+\begin{equation}\label{eq:enerW2}
+W \approx mc^2 \left( 1+ \frac{\xi^2}{n^2} \left( 1-\frac{\xi^2}{n|\kappa|} + \frac{3\xi^4}{4n|\kappa|\kappa^2} + \frac{\xi^4}{4n^2\kappa^2} \right)^{-1}  \right)^{-1/2}
+\end{equation}
+
+donde se despreciaron los t\'erminos en $\xi$ de orden mayor al cuarto. Luego, expandiendo el par\'entesis interno de \ref{eq:enerW2} usando la expresi\'on \ref{eq:AbramSteExp} se obtiene 
+
+
+\begin{equation}\label{eq:enerW3}
+W \approx mc^2 \left( 1+ \frac{\xi^2}{n^2} \left( 1 + \frac{\xi^2}{n|\kappa|} - \frac{3\xi^4}{4n|\kappa|\kappa^2} + \frac{3\xi^4}{4n^2\kappa^2} \right)  \right)^{-1/2}
+\end{equation}
+
+y finalmente, como para no perder la costumbre, se puede usar una vez m\'as la expansi\'on \ref{eq:AbramSteExp} (de nuevo conservando t\'erminos hasta cuarto orden) para deshacerse de la ra\'iz cuadradada y el denominador molesto, obteniendo la expresi\'on
+
+\begin{equation}\label{eq:enerW4}
+W\approx mc^2 \left(  1- \frac{\xi^2}{2n^2} +\xi^4 \left( \frac{3}{8n^4}-\frac{1}{2n^3 |\kappa|} \right)  \right)
+\end{equation}
+
+Ahora, para comparar con el caso no relativista, se obtiene la expresi\'on para $W-mc^2$ (pues en el caso no relativista no hay energ\'ia asociada a la masa en reposo) y se reemplaza la expresi\'on para $\xi$ de su definici\'on, llegando a la expresi\'on 
+
+\begin{equation}\label{eq:enerWfinal}
+W-mc^2 = -\frac{Z^2e^4m}{(4\pi\epsilon_0)^2\hbar^2 2n^2}+\frac{Z^4e^8m}{(4\pi\epsilon_0)^4\hbar^4 c^2} \left( \frac{ 3}{8n^4}-\frac{1}{2n^3|\kappa|} \right)
+\end{equation}
+
+
 \subsection{Niveles de Energ\'ia}
 
 %------------------------------------------------APENDICE----------------------
@@ -815,6 +899,54 @@ Y con un procedimiento an\'alogo se deduce que $b_m$ es:
 \begin{equation}
 b_m = (-1)^m \dfrac{n'(n'-1)\cdot\cdot\cdot (n'-m +1)}{m!(2s+1)(2s+2)\cdot\cdot\cdot(2s+m)}b_0
 \end{equation}
+
+\subsection{C\'alculo de la expresi\'on de la energ\'ia y correcci\'on relativista}
+
+Para llegar a la ecuaci\'on \ref{eq:enerW2} se recuerda que $s=+\sqrt{\kappa^2-\xi^2}$ pero usando la expansi\'on \ref{eq:AbramSteExp} se puede expresar como 
+
+\begin{equation}
+s\approx \kappa \left( 1-\frac{\xi^2}{2\kappa^2}+\frac{3\xi^4}{8\kappa^4}  \right)
+\end{equation}
+
+Por lo tanto, se puede hacer el reemplazo en la ecuaci\'on \ref{eq:enerW}
+
+\begin{equation}
+W = mc^2 \left(1+frac{\xi}{(n-|\kappa|+s)^2} \right)^{-1/2}
+\end{equation}
+
+Para facilitar los c\'alculos, se proceder\'a a hacer el reemplazo solamente del denominador y luego se pone dentro de toda la expresi\'on, as\'i, se tiene
+
+\[
+(n-|\kappa| + s)^2 = n^2 + \kappa^2 + s^2 -2n|\kappa| +2ns -2s|\kappa| 
+\]
+\[
+\begin{split}
+= n^2-2n|\kappa|+2n\kappa \left( 1-\frac{\xi^2}{2\kappa^2} +\frac{3\xi^4}{8\kappa^4} \right) +\kappa^2 -2\kappa^2 \left( 1-\frac{\xi^2}{2\kappa^2} +\frac{3\xi^4}{8\kappa^4} \right) \\
++ \kappa^2 \left(  1+\frac{\xi^4}{4\kappa^4} +\frac{9\xi^8}{64\kappa^8} -\frac{\xi^2}{\kappa^2} -\frac{3\xi^6}{8\kappa^6} + \frac{3\xi^4}{4\kappa^4} \right)
+\end{split}
+\]
+
+\[
+\begin{split}
+=n^2-2n|\kappa| +2n\kappa \left( 1-\frac{\xi^2}{2\kappa^2} +\frac{3\xi^4}{8\kappa^4} \right) +2\kappa^2 -2\kappa^2 \left( 1-\frac{\xi^2}{2\kappa^2} +\frac{3\xi^4}{8\kappa^4} \right) \\
++\frac{\xi^4}{4\kappa^2} +\frac{9\xi^8}{64\kappa^6} -\xi^2 -\frac{3\xi^6}{8\kappa^4} + \frac{3\xi^4}{4\kappa^2}
+\end{split}
+\]
+
+Y ahora, reorganizando los t\'erminos en potencias de  $\xi$, se obtiene
+
+\[
+\begin{split}
+=n^2 -2n|\kappa| + 2n\kappa + 2\kappa^2 - 2\kappa^2 + \xi^2 \left(  -\frac{n}{\kappa} + \frac{k\kappa}{\kappa^2} -1 \right) \\
++ \xi^4 \left(  \frac{3n}{4|\kappa^3|} -\frac{3}{4\kappa^2} +\frac{1}{4\kappa^2} + \frac{3}{4\kappa^2}  \right)  -\frac{3\xi^6}{8\kappa^2} + \frac{9\xi^8}{64\xi^2}
+\end{split}
+\]
+
+\[
+\approx n^2 - \frac{n}{|\kappa|}\xi^2 +\frac{3n}{4|\kappa^3|}\xi^4 +\frac{\xi^4}{4\kappa^2}
+\]
+
+
 
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
